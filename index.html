@@ -13,12 +13,12 @@
    </section1> 
    <section2>
      <h2> DON'T </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/b.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/b.png"> <br>
      <p> - Don't define measures as sub-properties of sdmx:obsValue </p> 
     </section2>
   <section3>
      <h2> DO </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/c.png">  
+     <img src="https://kopanidis.github.io/qb_recommendations/images/c.png">  
     </section3>
   <section4>
       <h2> OPEN ISSUES </h2>
@@ -42,7 +42,7 @@
     </section1>
     <section2>
       <h2> DO </h2> 
-      <img src="https://kopanidis.github.io/qb_recommendations/d.png"> <br>
+      <img src="https://kopanidis.github.io/qb_recommendations/images/d.png"> <br>
       <p> - QUDT vocabulary should be preferred for the units of measure </p> <hr> 
     </section2>
  </body3>
@@ -51,13 +51,13 @@
    <section1>
      <p> Scenario: Publish data about unemployment with two units (percent, count) </p>
      <h2> OPTION 1 (Publish multiple cubes with one unit) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/e.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/e.png"> <br>
      <p> - Publish two cubes about unemployment with a single unit. :cube1 with qudt:Percent and :cube2 with qudt:Number <br>
       - Define the unit at the qb:MeasureProperty  </p>
    </section1>
    <section2>
      <h2> OPTION 2 (Publish one cube with multiple units) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/f.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/f.png"> <br>
      <p> -  Publish one cube about unemployment with two units (qudt:Percent, qudt:Number) <br>
       -  Define the unit at each qb:Observation   </p> <hr> 
     </section2>
@@ -67,12 +67,12 @@
    <section1>
      <p> Scenario: Publish data about unemployment (percent, count) and poverty (count) </p>
      <h2> OPTION 1 (Multi-measure observations) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/g.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/g.png"> <br>
      <p> -  Use multiple measures at one observation.  For example :obs1 has two measures :unemployment and :poverty </p>
    </section1>
    <section2>
      <h2> OPTION 2 (Measure dimension) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/h.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/h.png"> <br>
      <p> -   Use observations with a single measure <br>
       -   Use the dimension qb:MeasureType to denote the measure used by the observation   </p> <hr>
     </section2>
@@ -81,7 +81,7 @@
   <h1 style="text-align:center; font-size:26pt"> 6: How to define dimensions values </h1>
   <section1>
      <h2> DO </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/i.png">
+     <img src="https://kopanidis.github.io/qb_recommendations/images/i.png">
      <p> -  Use a code list to indicate the set of potential dimension values <br>
       -  Use rdfs:range to define the type of  dimension values <br>
     *Exception:  a code list should not be defined when the rdfs:range is a data-type e.g. xsd:date, xsd:integer, xsd:boolean 
@@ -92,12 +92,12 @@
   <h1 style="text-align:center; font-size:26pt"> 7: How to define code lists </h1>
   <section1>
      <h2> DON'T </h2>
-     <img src="https://kopanidis.github.io/qb_recommendations/j.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/j.png"> <br>
      <p> - Don’t include irrelevant values under a single dimension </p>  
    </section1> 
    <section2>
      <h2> DO </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/k.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/k.png"> <br>
      <p> -  Define a separate dimension for each  descriptive category of the data (e.g. sex, age) <br>
       - Use a separate code list for each dimension 
      </p> <hr>
@@ -107,29 +107,29 @@
   <h1 style="text-align:center; font-size:26pt"> 8: How to define hierarchical code list </h1>
   <section1>
      <h2> DON'T </h2>
-     <img src="https://kopanidis.github.io/qb_recommendations/l.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/l.png"> <br>
      <p> - Don’t define hierarchical data at the same level   </p>  
    </section1> 
    <section2>
      <h2> DO </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/m.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/m.png"> <br>
      <p> - Use hierarchies at hierarchical data </p> 
     </section2>
     <section3>
       <h2> HOW (OPTION 1 SKOS) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/n.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/n.png"> <br>
      <p> - SKOS can define broader/narrower relations </p> 
     </section3>
     <section4>
       <h2> HOW (OPTION 2 QB) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/o.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/o.png"> <br>
      <p> - QB can define new broader/narrower relations e.g. within <br>
       -  QB can express more  relations not covered by SKOS or XKOS  e.g. administeredBy vs within
       </p> 
     </section4>
     <section5>
       <h2> HOW (OPTION 3 XKOS) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/p.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/p.png"> <br>
      <p> -  XKOS can define broader/narrower relations <br>
       -   XKOS can define hierarchical levels e.g. country, city
       </p> <hr>
@@ -143,17 +143,17 @@
    </section1> 
    <section2>
      <h2> DON'T </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/q.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/q.png"> <br>
      <p> Don’t define total values at the same hierarchical level  with the rest dimension values </p> 
     </section2>
     <section3>
      <h2> HOW (OPTION 1) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/r.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/r.png"> <br>
      <p> Define total values at the top of a hierarchy (see Rec 6)  </p> 
     </section3>
     <section4>
      <h2> HOW (OPTION 2) </h2> 
-     <img src="https://kopanidis.github.io/qb_recommendations/t.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/t.png"> <br>
      <p> - Total values can be defined at slices.  The total  value for a dimension is represented by leaving out this dimension from the slice.
       <br>
       -The example shows a slice that defines the total unemployment  (17%) for all the people (male and female) with age 30-45, at Dublin the year 2011 
@@ -165,12 +165,12 @@
   <section1>
      <h2> DO </h2>
     <p> In case you need to describe a specific point in time (e.g. 25/12/2016) then use: </p>
-     <img src="https://kopanidis.github.io/qb_recommendations/u.png">  
+     <img src="https://kopanidis.github.io/qb_recommendations/images/u.png">  
    </section1> 
    <section2>
      <h2> DO </h2> 
      <p> In case you need to describe a period of time (e.g. 2016) then use: </p>
-     <img src="https://kopanidis.github.io/qb_recommendations/v.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/v.png"> <br>
      <p> * Other code lists could be used as well </p> <hr>
     </section2>
   </body10>
@@ -178,7 +178,7 @@
   <h1 style="text-align:center; font-size:26pt"> 11: How to define “sex” dimension? </h1>
   <section1>
      <h2> DO </h2>
-     <img src="https://kopanidis.github.io/qb_recommendations/w.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/w.png"> <br>
      <p> - Re-use the dimension sdmx:sex <br>
     * The codelist sdmx-code:sex has to be updated according to Rec 5 i.e. sdmx-code:sex-T should not  be at the same hierarchical   level  with sdmx-code:sex-M and sdmx-code:sex-F
     <br>
@@ -190,7 +190,7 @@
   <h1 style="text-align:center; font-size:26pt"> 12: How to define “geo” and “age” dimension? </h1>
   <section1>
      <h2> DO </h2>
-     <img src="https://kopanidis.github.io/qb_recommendations/x.png"> <br>
+     <img src="https://kopanidis.github.io/qb_recommendations/images/x.png"> <br>
      <p> - Define new dimensions for geography and age by extending sdmx:refArea and  sdmx:age respectively <br>
          - Associate the new dimensions with a code list 
       </p> <hr> 
@@ -200,7 +200,7 @@
   <h1 style="text-align:center; font-size:26pt"> 13: Dimension with Single Value </h1>
   <section1>
      <h2> DO </h2>
-     <img src="https://kopanidis.github.io/qb_recommendations/y.png"> 
+     <img src="https://kopanidis.github.io/qb_recommendations/images/y.png"> 
      <p> -  If a dataset has a single value for a dimension, then define this value at each observation e.g. 2011 census data
      </p>
    </section1> 
