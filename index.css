@@ -5,3 +5,5 @@ body {
   color: black;
   background: white;
 }
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
