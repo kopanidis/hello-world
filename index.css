@@ -5,7 +5,7 @@ body {
   color: black;
   background: white;
  }
-h1 { color: #005A9C; background: white; text-align: center; font: 170% sans-serif }
+h1 {  text-align: center; color: #005A9C; background: white; font: 170% sans-serif }
 h2 { color: #005A9C; font: 140% sans-serif }
 h3 { color:#00008B; font: 120% sans-serif }
 a { font-size: small }
