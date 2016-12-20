@@ -31,18 +31,18 @@
      <img src="https://kopanidis.github.io/qb_recommendations/images/c.png">  
       <h2> OPEN ISSUES </h2>
      <p> - What URI to use for measures. Indicators Interoperability (name, calculation formula, data etc.) </p> <hr> 
-   <h1 id="2" style="text-align:center; font-size:26pt"> 2: Define cubes with multiple measures? </h1>
+   <h1 id="2" style="text-align:center"> 2: Define cubes with multiple measures? </h1>
       <h2> OPEN ISSUES </h2>
      <p> - Should a cube have one or multiple measures? <br>
        - Use cubes with multiple measures only when measures are closely related to a single observational event
      </p> <hr>
-   <h1 id="3" style="text-align:center; font-size:26pt"> 3: How to define a unit </h1>
+   <h1 id="3" style="text-align:center"> 3: How to define a unit </h1>
       <h2> DO </h2>
       <p> - Always define unit for measures </p> 
       <h2> DO </h2> 
       <img src="https://kopanidis.github.io/qb_recommendations/images/d.png"> <br>
       <p> - QUDT vocabulary should be preferred for the units of measure </p> <hr>
-  <h1 id="4" style="text-align:center; font-size:26pt"> 4: How to define multiple units per measure </h1>
+  <h1 id="4" style="text-align:center"> 4: How to define multiple units per measure </h1>
      <p> Scenario: Publish data about unemployment with two units (percent, count) </p>
      <h2> OPTION 1 (Publish multiple cubes with one unit) </h2> 
      <img src="https://kopanidis.github.io/qb_recommendations/images/e.png"> <br>
@@ -52,7 +52,7 @@
      <img src="https://kopanidis.github.io/qb_recommendations/images/f.png"> <br>
      <p> -  Publish one cube about unemployment with two units (qudt:Percent, qudt:Number) <br>
       -  Define the unit at each qb:Observation   </p> <hr> 
-  <h1 id="5" style="text-align:center; font-size:26pt"> 5: How to define multiple measures with multiple units </h1>
+  <h1 id="5" style="text-align:center"> 5: How to define multiple measures with multiple units </h1>
      <p> Scenario: Publish data about unemployment (percent, count) and poverty (count) </p>
      <h2> OPTION 1 (Multi-measure observations) </h2> 
      <img src="https://kopanidis.github.io/qb_recommendations/images/g.png"> <br>
@@ -61,14 +61,14 @@
      <img src="https://kopanidis.github.io/qb_recommendations/images/h.png"> <br>
      <p> -   Use observations with a single measure <br>
       -   Use the dimension qb:MeasureType to denote the measure used by the observation   </p> <hr>
-  <h1 id="6" style="text-align:center; font-size:26pt"> 6: How to define dimensions values </h1>
+  <h1 id="6" style="text-align:center"> 6: How to define dimensions values </h1>
      <h2> DO </h2> 
      <img src="https://kopanidis.github.io/qb_recommendations/images/i.png">
     <p> -  Use a <b> code list </b> to indicate the set of potential dimension values <br>
       -  Use rdfs:range to define the type of  dimension values <br>
     *Exception:  a code list should not be defined when the rdfs:range is a data-type e.g. xsd:date, xsd:integer, xsd:boolean 
     </p> <hr>
-  <h1 id="7" style="text-align:center; font-size:26pt"> 7: How to define code lists </h1>
+  <h1 id="7" style="text-align:center"> 7: How to define code lists </h1>
      <h2> DON'T </h2>
      <img src="https://kopanidis.github.io/qb_recommendations/images/j.png"> <br>
      <p> - Don’t include irrelevant values under a single dimension </p>  
@@ -77,7 +77,7 @@
      <p> -  Define a separate dimension for each  descriptive category of the data (e.g. sex, age) <br>
       - Use a separate code list for each dimension 
      </p> <hr>
-  <h1 id="8" style="text-align:center; font-size:26pt"> 8: How to define hierarchical code list </h1>
+  <h1 id="8" style="text-align:center"> 8: How to define hierarchical code list </h1>
      <h2> DON'T </h2>
      <img src="https://kopanidis.github.io/qb_recommendations/images/l.png"> <br>
      <p> - Don’t define hierarchical data at the same level   </p>  
@@ -97,7 +97,7 @@
      <p> -  XKOS can define broader/narrower relations <br>
       -   XKOS can define hierarchical levels e.g. country, city
       </p> <hr>
-  <h1 id="9" style="text-align:center; font-size:26pt; id='9'"> 9: How to define “total” values? </h1>
+  <h1 id="9" style="text-align:center"> 9: How to define “total” values? </h1>
      <h2> DO </h2>
      <p> Define total values for the dimensions (where applicable) </p>  
      <h2> DON'T </h2> 
@@ -112,7 +112,7 @@
       <br>
       -The example shows a slice that defines the total unemployment  (17%) for <b>all the people (male and female)</b> with age 30-45, at Dublin the year 2011 
       </p> <hr>
-  <h1 id="10" style="text-align:center; font-size:26pt"> 10: How to define “time” dimension? </h1>
+  <h1 id="10" style="text-align:center"> 10: How to define “time” dimension? </h1>
      <h2> DO </h2>
     <p> In case you need to describe a specific point in time (e.g. 25/12/2016) then use: </p>
      <img src="https://kopanidis.github.io/qb_recommendations/images/u.png">  
@@ -120,7 +120,7 @@
      <p> In case you need to describe a period of time (e.g. 2016) then use: </p>
      <img src="https://kopanidis.github.io/qb_recommendations/images/v.png"> <br>
      <p> * Other code lists could be used as well </p> <hr>
-  <h1 id="11" style="text-align:center; font-size:26pt"> 11: How to define “sex” dimension? </h1>
+  <h1 id="11" style="text-align:center"> 11: How to define “sex” dimension? </h1>
      <h2> DO </h2>
      <img src="https://kopanidis.github.io/qb_recommendations/images/w.png"> <br>
      <p> - Re-use the dimension sdmx:sex <br>
@@ -128,13 +128,13 @@
     <br>
        * If more notions of sex are needed (e.g. hermaphroditism, transgender), then define a new dimension and/or code list 
     </p> <hr> 
-  <h1 id="12" style="text-align:center; font-size:26pt"> 12: How to define “geo” and “age” dimension? </h1>
+  <h1 id="12" style="text-align:center"> 12: How to define “geo” and “age” dimension? </h1>
      <h2> DO </h2>
      <img src="https://kopanidis.github.io/qb_recommendations/images/x.png"> <br>
      <p> - Define new dimensions for geography and age by extending sdmx:refArea and  sdmx:age respectively <br>
          - Associate the new dimensions with a code list 
       </p> <hr> 
-  <h1 id="13" style="text-align:center; font-size:26pt"> 13: Dimension with Single Value </h1>
+  <h1 id="13" style="text-align:center"> 13: Dimension with Single Value </h1>
      <h2> DO </h2>
      <img src="https://kopanidis.github.io/qb_recommendations/images/y.png"> 
      <p> -  If a dataset has a single value for a dimension, then define this value at each observation e.g. 2011 census data
