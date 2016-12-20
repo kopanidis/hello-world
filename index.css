@@ -8,7 +8,6 @@ body {
   background: white;
 }
 h1, h2, h3 { color: #005A9C; background: white }
-h1 {  font: 170% sans-serif; 
-      text-align: center }
+h1 { text-align: center }
 h2 { font: 140% sans-serif }
 h3 { font: 120% sans-serif }
